@@ -26,4 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Dashboard</title>
 </head>
 <body>
-    <h2>Create a New Campaign
+    <h2>Create a New Campaign</h2>
+    <form method="POST" action="">
+        <input type="text" name="title" placeholder="Campaign Title" required><br>
+        <textarea name="description" placeholder="Campaign Description" required></textarea><br>
+        <input type="number" name="goal_amount" placeholder="Goal Amount" required><br>
+        <button type="submit">Create Campaign</button>
+    </form>
+</body>
+</html>
