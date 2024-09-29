@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h2>Donate to "{{ project.title }}"</h2>
+<form method="POST" action="">
+    <div class="form-group">
+        <label for="amount">Amount ($)</label>
+        <input type="number" class="form-control" id="amount" name="amount" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Donate</button>
+</form>
+{% endblock %}
